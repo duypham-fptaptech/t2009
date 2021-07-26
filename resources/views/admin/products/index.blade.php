@@ -47,7 +47,7 @@
                         <td><img class="circular-bar" width="100px" src="{{$item->thumbnail}}" alt="{{$item->name}}"></td>
                         <td>{{$item->name}}</td>
                         <td>{{$item->price}}</td>
-                        <td>Thêm sửa xoá</td>
+                        <a href="/cart/add"></a>
                     </tr>
                 @endforeach
                 </tbody>

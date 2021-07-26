@@ -5,6 +5,7 @@ use App\Http\Controllers\EventControlle;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
@@ -43,3 +44,5 @@ Route::get('/demo/page3', [LayoutController::class, 'page3']);
 Route::get('/admin/index', [AdminController::class, 'showIndex']);
 Route::get('/admin/list', [AdminController::class, 'showList']);
 Route::get('/admin/form', [AdminController::class, 'showForm']);
+
+Route::get('/cart/add', [ShoppingCartController::class, 'add']);
